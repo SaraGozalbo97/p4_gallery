@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescata aniales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+            font-family: var(--lora);
+            font-size: 15px;
+            text-transform: uppercase;
+            color: var(--blau);
+        }
+        :root{
+            --m_obsur: #cb997e;
+            --m_clar: #ddbea9;
+            --beig: #ffe8d6;
+            --v_obscur: #6b705c;
+            --v_clar: #b7b7a4;
+            --lora: 'Lora', serif;
+            --lato: 'Lato', sans-serif;
+            --negrita: 700;
+        }
+        .grup1{
+            display: flex;
+            flex-direction: row;
+        }
+        .grup2{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .container #animals{
+            padding: 0 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .cr #centresderecuperacio{
+            padding: 0 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;     
+        }
+
+        body>header{
+            display: flex;
+            padding: 50px 0;
+            text-align: center;
+            height: 55vh;
+            background-color: var(--v_obscur);
+            justify-content: center;
+        }
+
+        h1{
+            font-size: 3em;
+            font-family: var(--lato);
+            font-weight: var(--negrita);
+            color: white;
+
+
+        }
+        h2{
+            font-size: 0.7em;
+            font-family: var(--lora);
+            color:white;
+            margin: 20px;
+        }
+        .cr {
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+            background-color: var(--beig);
+
+         }
+        .centres_img{
+            width: 300px;
+            height: 30px;
+
+        }
+        h3{
+            font-family: var(--lato);
+            color: black;
+            margin-left: 40px;
+            
+        }
+        h5{
+            font-family: var(--lora);
+            font-size: 10px;
+            text-align: center;    
+        }
+        h4{
+            font-family: var(--lora);
+            color: var(--m_clar);
+            font-size: 0.5em;
+            display: flex;
+            padding: 85px 0;
+            text-align: center;
+            justify-content: space-around;
+        }
+        }
+        nav {
+            font-size: 0.5em;
+            font-family: var(--lora);
+            color: var(white);
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+            
+
+        }
+        section:first-child{
+            height: 100%;
+            background-color: var(--beig);
+            color: white;
+        }
+        .cover{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 250px;
+            height: 300px;
+            padding: 0.5em;
+            margin: 0.3em;
+            flex-grow: 1;
+            background-color: var(--gris);
+
+        }
+        .cover_img{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            max-height:200px;
+            background: var(white);
+            flex-grow: 1;
+        }
+        .cover_img img{
+           object-fit: cover;
+           object-position: center;
+           flex-grow: 1;
+        }
+        .cover header{
+            background-color:var(--v_clar);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .cover h3{
+            font-family: var(--lora);
+            font-size: 0.5em;
+            color: var(white);
+            margin: 20px;
+        }
+        section:last-child{
+            height: 100%;
+            background-color: var(--beig);
+            width: 100%;
+
+        }
+        .centres{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 60px;
+            margin: 95px;
+            align-items: center;
+            
+        }
+        .centres_img{
+            display: flex;
+            flex-direction: column;
+            width:120px;
+            max-height:200px;
+            background: var(white);
+            flex-grow: 1;
+
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            height: 30vh;
+            background-color: var(--v_obscur);
+            color: var(--v_obscur);
+        }
+        footer .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--v_obscur);
+            width: 100%;
+        }
+
+        footer h4{
+            width: 300px;
+            
+
+        }
+        .cr{
+            display: flex;
+            flex-direction: row;
+            margin: -100px;
+        }
+        .centres_img{
+            margin-bottom: 120px;
+        }
+        h6{
+            font-family: var(--lato);
+            font-size: 20px;
+            text-align: center;
+            padding: -35px;
+        }
+        footer h3{
+            font-family: var(--lato);
+            color: black;
+            margin-left: 40px;
+            padding: 20px;    
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"id="animals">
+            <hgroup>
+                <h1>Tot tipus d'animals</h1>
+                <h2>Al món hi ha molts tipus d'animals, alguns domèstics i altre no, però sigui quin sigui, si en trobes un ferit has d'ajudar-lo.</h2>
+            </hgroup>
+            <nav>
+                <a href="#animals">Animals</a>
+                <a href="#centresderecuperacio">Centres de recuperació</a>
+                <a href="#xxss">Xarxes socials</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <section id="#animals">
+                <h3>Animals</h3>
+                <div class="container">
+                    <div class="grup1">
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/gato.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Gat</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/hamster.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Hamster</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/huron.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Furó</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/lagarto.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Fardatxo</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/leon.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Lleó</h3>
+                        </header>
+                    </div>
+                </div>
+                <div class="grup2">
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/perro.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Gos</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/serpiente.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Serp</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/tigre.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Tigre</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/tortuga.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Tortuga</h3>
+                        </header>
+                    </div>
+                    <div class="cover">
+                        <div class="cover_img">
+                            <img src="img/animales/zorro.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Rabosa</h3>
+                        </header>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section id="centresderecuperacio">
+                <h3>Centres de recuperació</h3>
+                <div class="cr">
+                    <div class="centres">
+                        <div class="centres_img">
+                            <img src="img/centres de recuperacio/editades/fauna el valle.jpg" alt="">
+                        </div>
+                        <header>
+                            <h6>C.R.F. El veller</h6>
+                            <h5>"El Centro de Recuperación de Fauna Silvestre El Valle continúa trabajando al considerarse un servicio esencial y teniendo en cuenta la importancia que la actividad de los centros clínicos veterinarios y de cuidados de animales tienen en la vigilancia y control de las enfermedades que desarrollamos. </h5>
+                            
+                        </header>
+                    </div>    
+                    <div class="centres">
+                            <div class="centres_img">
+                                <img src="img/centres de recuperacio/editades/fauna salvaje.jpg" alt="">
+                            </div>
+                            <header>
+                                <h6>C.R. Fauna salvatge</h6>
+                                <h5>"El Equipo de Rescate de Fauna Salvaje es un proyecto pionero desde sus inicios, que lleva en funcionamiento desde principios 2005, no existiendo actualmente en la Comunidad de Madrid ningún otro equipo profesional de rescate de fauna herida que funcione 24 horas al día"</h5>
+                                
+                            </header>
+                    </div>   
+                        
+                    <div class="centres">
+                            <div class="centres_img">
+                                <img src="img/centres de recuperacio/editades/lluna.jpg" alt="">
+                            </div>
+                            <header>
+                                <h6>C.R.F Lluna</h6>
+                                <h5>"Fundación Luna para la protección de animales abandonados, necesitados o maltratados que nace con la misión de auxiliar, rescatar y acoger animales en situación de desamparo, maltrato y/o abandono principalmente en la provincia de Salamanca."</h5>
+                                
+                            </header>
+                        </div>   
+                    </div>        
+                
+            </section>
+        
+    </main>
+    <footer id="#xxss">
+            <h3>Xarxes</h3>
+            <div class="container">
+                <h4><a href="#">twitter</a></h4>
+                <h4><a href="#">instagram</a></h4>
+                <h4><a href="#">facebook</a></h4>
+
+            </div>     
+    </footer>
+</body>
+</html>
